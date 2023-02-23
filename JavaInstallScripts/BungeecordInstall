@@ -40,7 +40,7 @@ sleep 1
 ../bin/java_bins/bin/java -jar BungeeCord.jar
 
 # removing the BungeeCord jar and log
-rm BuildTools*
+rm BungeeCord*
 # changing the name of the file to appropriate name...
 JAR=$(ls *.jar)
 mv $JAR server.jar
