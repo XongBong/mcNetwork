@@ -37,9 +37,9 @@ _________         _________ _______            _________ _        _
 sleep 7
 clear
 sleep 1
-../bin/java_bins/bin/java -jar BuildTools.jar
+../bin/java_bins/bin/java -jar BungeeCord.jar
 
-# removing the BuildTools jar and log
+# removing the BungeeCord jar and log
 rm BuildTools*
 # changing the name of the file to appropriate name...
 JAR=$(ls *.jar)
