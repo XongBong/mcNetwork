@@ -2,7 +2,7 @@
 * Activate a [Google Cloud Shell](https://console.cloud.google.com/) on Google cloud.
 * Clone this GitHub Project into the Console:
 ```
-git clone https://github.com/XongBong/mcserver
+git clone https://github.com/XongBong/mcNetwork
 ```
 * Go into `mcserver` directory:
 ```
