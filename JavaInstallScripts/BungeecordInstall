@@ -6,14 +6,14 @@
 
 MAIN_DIR=$PWD
 echo "This will install the latest bungeecord version.. if you want custom version change the BUILD_URL in JavaInstallScript/BungeecordInstall file"
-BUILD_URL=https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
+BUILD_URL=https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar
 
 #checking the directories thingy
 cd ..
 mkdir -p server
 cd server/
 
-# downloading the damn BuildTools.jar
+# downloading the damn BungeeCord.jar
 wget -q $BUILD_URL 
 echo -e "
 _________         _________ _______            _________ _        _         
