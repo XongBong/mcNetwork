@@ -3,19 +3,20 @@ mkdir bin
 chmod +x *
 export MAIN_DIR=$PWD
 echo "Which Server do you want to install?"
-echo "Type [1] Java Server"
-echo "Type [2] Bedrock Server"
+echo "Type [1] Tshock Server"
+echo "Type [2] Test Server"
 
 choiceForServer=1
 read choiceForServer
 
-# Installing Java 16 JDK and playit
+# Installing
 
-#wget -q "https://download.oracle.com/java/17/archive/jdk-17.0.3_linux-x64_bin.tar.gz" -O bin/java.tar.xz
-wget -q "https://download.java.net/java/GA/jdk17.0.1/2a2082e5a09d4267845be086888add4f/12/GPL/openjdk-17.0.1_linux-x64_bin.tar.gz" -O bin/java.tar.xz
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 cd $MAIN_DIR/bin
-echo "> Extracting Java JDK 16 to the bin/ folder. [THIS MAY TAKE SOME TIME] Replace it if you want to use older version of JAVA."
-tar -xf java.tar.xz && mv "jdk-17.0.1" java_bins
+echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list
+apt-get update
+apt-get install mono-complete
+mkdir terraria
 
 cd $MAIN_DIR
 # If choice is 0 or null then run this command
@@ -27,20 +28,18 @@ if [[ -z $choiceForServer ]]; then
 # If choice is 1 then run this command
 elif [[ $choiceForServer == 1 ]]; then
 	
-	echo "> Running Java Installation..."
+	echo "> Running Tshock Installation..."
   ./installJava
 
 # If choice is 1 then run this command
 elif [[ $choiceForServer == 2 ]]; then
 	
-	echo "> Running Bedrock Installation..."
-  ./installBedrock
+	echo "> This for test only. Please try again."
+  ./install
 
 else
 	echo "> Invaild Respond. Please try again."
 	./install
 fi
-echo "> Installing AFK(Away From Keyboard) Script "
-python3 -m pip install bpytop
 echo ""
 
