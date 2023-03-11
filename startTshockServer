@@ -3,4 +3,4 @@ export MAIN_DIR=$PWD
 export JAVA=$MAIN_DIR/bin/java_bins/bin/java
 cd terrariaserver
 
-mono TerrariaServer.exe
+mono TShock.Server.exe
