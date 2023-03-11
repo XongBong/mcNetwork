@@ -11,7 +11,7 @@ echo "> Dependencise Installed!"
 # apparently ppl keep spamming startserver and end up having multiple screens of the same app
 killall screen
 
-screen -S server -d -m ./startTshockServer # Starting Java Server
+screen -S server -d -m ./startTshockServer # Starting Tshock Server
 screen -S playit -d -m ./startPlayIt # Starting Playit
 
 
