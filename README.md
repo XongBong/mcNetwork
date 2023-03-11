@@ -2,7 +2,7 @@
 * Activate a [Google Cloud Shell](https://console.cloud.google.com/) on Google cloud.
 * Clone this GitHub Project into the Console:
 ```
-git clone https://github.com/XongBong/terrariaserver
+git clone https://github.com/XongBong/terrariasrv
 ```
 * Go into `terrariasrv` directory:
 ```
@@ -96,8 +96,8 @@ cd
 ```
 sudo rm -r terrariasrv
 ```
-If the project is completely deleted, you can [Clone the Project](https://github.com/XongBong/terrariaserver/blob/main/README.md#installation) again and it should be up to date with the new features and code from this project!
+If the project is completely deleted, you can [Clone the Project](https://github.com/XongBong/terrariasrv/blob/main/README.md#installation) again and it should be up to date with the new features and code from this project!
 ## Conclusion
-Now you can host your very own Terraria Server fast and easy and it won't cost you a single penny to make a fast and strong server. Best of all, IT'S FOREVER! Feel free to leave any requests you would like me to add into the project. If you have any issues, go to the [**Issues**](https://github.com/XongBong/terrariaserver/issues) tab and submit a issue there.
+Now you can host your very own Terraria Server fast and easy and it won't cost you a single penny to make a fast and strong server. Best of all, IT'S FOREVER! Feel free to leave any requests you would like me to add into the project. If you have any issues, go to the [**Issues**](https://github.com/XongBong/terrariasrv/issues) tab and submit a issue there.
 ## Credits
 > Project Creator: *[XongBong](https://github.com/XongBong/)*
