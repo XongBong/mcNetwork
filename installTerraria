@@ -43,7 +43,6 @@ install_server () {
 }
 
 #Installing all the dependencise
-sudo apt-get install unzip zip
 sudo apt-get -y install screen
 
 echo "export PATH=$PATH:/some/new/path" > ~/.profile
