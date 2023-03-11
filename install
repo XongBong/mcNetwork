@@ -16,6 +16,7 @@ cd $MAIN_DIR/bin
 echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list
 apt-get update
 apt-get install mono-complete
+apt-get install unzip zip
 
 cd $MAIN_DIR
 # If choice is 0 or null then run this command
