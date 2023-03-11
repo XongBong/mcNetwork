@@ -3,12 +3,12 @@ export MAIN_DIR=$PWD
 echo "> Checking..."
 
 # Begin Uninstalling Server
-if [ ! -d $MAIN_DIR/server ]; then
+if [ ! -d $MAIN_DIR/terrariaserver ]; then
 
 echo "> You haven't installed the server yet..."
 
 
-elif [ -d $MAIN_DIR/server ]; then
+elif [ -d $MAIN_DIR/terrariaserver ]; then
 echo "> Server Folder Detected!"
 echo " -- Are you sure you want to uninstall and delete your server? --"
 echo "Type [1] for Yes"
@@ -23,7 +23,7 @@ echo "> By Default, you selected 'No'"
 echo "> Abort!"
 
 elif [[ $UninstallPick == 1 ]]; then
-sudo rm -r server
+sudo rm -r terrariaserver
 sudo rm -rf bin
 killall screen
 echo "> Uninstall Complete! To make a new server, do ./install"
