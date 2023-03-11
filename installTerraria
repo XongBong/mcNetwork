@@ -10,7 +10,7 @@ install_server () {
     cd ServersInstallScripts
     chmod +x *
     
-    ./TshockInstall
+    ./Tshock
     errorno=${?}
     if [ $errorno -eq 1 ]
     then
@@ -26,7 +26,7 @@ install_server () {
     cd ServersInstallScripts
     chmod +x *
 
-    ./TshockInstall
+    ./Tshock
     errorno=${?}
     if [ $errorno -eq 1 ]
     then
@@ -38,7 +38,7 @@ install_server () {
  # Invaild Input
   else
     echo "Invaild Responds! Please try again"
-    ./installTshock
+    ./installTerraria
   fi
 }
 
@@ -50,12 +50,12 @@ echo "export PATH=$PATH:/some/new/path" > ~/.profile
 echo "> Dependencies Installtion Completed!"
 
 #Downloading playit && Downloading Terraria Server
-mkdir server 
+mkdir terrariaserver
 
 echo ""
 echo "-- Pick the following Server type: --"
 echo "Type [1] Create Default Tshock Server"
-echo "Type [2] Create Other Tshock Server"
+echo "Type [2] Create Other Server"
 choiceForServer=1
 read choiceForServer
 
